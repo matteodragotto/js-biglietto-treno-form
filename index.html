@@ -14,23 +14,31 @@
 
 <body>
   <div class="container d-flex align-content-center">
+    
+    <form class="w100 form d-flex flex-wrap  justify-content-center align-content-center row">
+      <div class="col-3 p-4">
+        <label for="name-surname">Nome e Cognome:</label>
+        <input type="text" id="name-surname-field" name="name-surname" placeholder="Nome e Cognome" required>
+      </div>
 
-    <form class="w100 form align-content-center">
-      <label for="name-surname">Nome e Cognome:</label>
-      <input type="text" id="name-surname-field" name="name-surname" placeholder="Nome e Cognome" required>
+      <div class="col-3 p-4">
+        <label for="km">KM da percorrere</label>
+        <input type="number" min="0" id="km-field" name="km" placeholder="Kilometri da percorrere" required>
+      </div>
 
-      <label for="km">KM da percorrere</label>
-      <input type="number" min="0" id="km-field" name="km" placeholder="Kilometri da percorrere" required>
-
-      <label for="age">Fascia d'Età</label>
-      <select id="age-field" name="age" required>
+      <div class="col-3 p-4">
+        <label for="age">Fascia d'Età</label><br>
+        <select id="age-field" name="age" required>
         <option value="minor">Minorenne</option>
         <option value="adult">Maggiorenne</option>
         <option value="senior">Over 65</option>
       </select>
-
-      <button class="sbm-btn" type="submit">Acquista biglietto</button>
-      <button class="reset-btn" type="submit">Annulla</button>
+      </div>
+      
+      <div class="col-12 d-flex justify-content-center mt-4">
+        <button class="sbm-btn m-3" type="submit">Acquista biglietto</button>
+        <button class="reset-btn m-3" type="submit">Annulla</button>
+      </div>
 
     </form> 
 
