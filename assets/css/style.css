@@ -4,6 +4,10 @@
  box-sizing: border-box;
 }
 
+body {
+  background-color: #022A72;
+}
+
 .container {
   width: 70%;
   margin: 40px auto;
@@ -13,6 +17,10 @@
 
 .w100{
   width: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 

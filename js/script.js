@@ -1,5 +1,7 @@
-const submit = document.querySelector('.sbm-btn')
+const resetForm = document.querySelector('.reset-btn')
 const form = document.querySelector('.form')
+const yourTicket = document.querySelector('.your-ticket')
+const ticket = document.querySelector('.ticket')
 
 const nameField = document.getElementById('name-surname-field')
 const kmField = document.getElementById('km-field')
@@ -39,8 +41,17 @@ form.addEventListener('submit', (event) => {
   carriage.innerText = Math.ceil(Math.random() * 20)
 
   cpCode.innerText = Math.ceil(Math.random()* 100000)
+
+  yourTicket.classList.remove('hide');
+  ticket.classList.remove('hide');
  
 })
+
+resetForm.addEventListener('click', () => {
+  yourTicket.classList.add('hide')
+  ticket.classList.add('hide')
+})
+
 
 
 
