@@ -15,27 +15,5 @@
   width: 100%;
 }
 
-.d-flex {
-  display: flex;
-}
 
-.wrap {
-  flex-wrap: wrap;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.align-center{
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-label {
-  display: block;
-}
 
