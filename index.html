@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   <script src="./js/script.js"></script>
 
   <title>Biglietto del treno</title>
@@ -13,17 +17,23 @@
 <body>
   <div class="container d-flex justify-center align-center">
 
-    <form class="w100 d-flex space-around">
+    <form class="w100 d-flex space-between wrap">
       <label for="name-surname">Nome e Cognome:</label>
       <input type="text" id="name-surname" name="name-surname" placeholder="Nome e Cognome">
+
       <label for="km">KM da percorrere</label>
       <input type="number" id="km" name="km" placeholder="Kilometri da percorrere">
+
       <label for="age">Fascia d'Età</label>
       <select id="age" name="age">
         <option value="minor">Minorenne</option>
         <option value="adult">Maggiorenne</option>
         <option value="senior">Over 65</option>
-      </select> 
+      </select>
+
+      <button class="sbm-btn" type="submit">Acquista biglietto</button>
+      <button class="reset-btn" type="submit">Annulla</button>
+
     </form> 
 
   </div>
