@@ -14,11 +14,8 @@ const cpCode = document.getElementById('cp-code')
 const price = document.getElementById('price')
 
 
-const kmDaPercorrere = kmField.value.trim();
-
 
 let prezzoPerKm = 0.21;
-const prezzoTotale = prezzoPerKm * kmDaPercorrere
 const scontoUnder18 = 20
 const scontoOver65 = 40
 
@@ -26,7 +23,9 @@ const scontoOver65 = 40
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   name.innerText = nameField.value.trim()
-  
+  const kmDaPercorrere = kmField.value.trim();
+  const prezzoTotale = prezzoPerKm * kmDaPercorrere
+
   if (ageField.value === 'minor') {
     offer.innerText = 'Biglietto Minori';
     price.innerText = prezzoTotale - (prezzoTotale * scontoUnder18 / 100).toFixed(2) + '€'
